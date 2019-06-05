@@ -29,7 +29,7 @@
   var instance
 
   beforeEach(function () {
-    instance = new Umschlag.InlineObject()
+    instance = new Umschlag.GeneralError()
   })
 
   /* eslint-disable no-unused-vars */
@@ -46,22 +46,22 @@
   }
   /* eslint-enable no-unused-vars */
 
-  describe('InlineObject', function () {
-    it('should create an instance of InlineObject', function () {
-      // uncomment below and update the code to test InlineObject
-      // var instane = new Umschlag.InlineObject();
-      // expect(instance).to.be.a(Umschlag.InlineObject);
+  describe('GeneralError', function () {
+    it('should create an instance of GeneralError', function () {
+      // uncomment below and update the code to test GeneralError
+      // var instane = new Umschlag.GeneralError();
+      // expect(instance).to.be.a(Umschlag.GeneralError);
     })
 
-    it('should have the property username (base name: "username")', function () {
-      // uncomment below and update the code to test the property username
-      // var instane = new Umschlag.InlineObject();
+    it('should have the property status (base name: "status")', function () {
+      // uncomment below and update the code to test the property status
+      // var instane = new Umschlag.GeneralError();
       // expect(instance).to.be();
     })
 
-    it('should have the property password (base name: "password")', function () {
-      // uncomment below and update the code to test the property password
-      // var instane = new Umschlag.InlineObject();
+    it('should have the property message (base name: "message")', function () {
+      // uncomment below and update the code to test the property message
+      // var instane = new Umschlag.GeneralError();
       // expect(instance).to.be();
     })
   })

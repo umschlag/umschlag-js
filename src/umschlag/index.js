@@ -12,15 +12,18 @@
  */
 
 import ApiClient from './ApiClient'
+import AuthLogin from './model/AuthLogin'
 import AuthToken from './model/AuthToken'
 import AuthVerify from './model/AuthVerify'
-import InlineObject from './model/InlineObject'
+import GeneralError from './model/GeneralError'
 import Profile from './model/Profile'
 import Team from './model/Team'
 import TeamUser from './model/TeamUser'
 import TeamUserParams from './model/TeamUserParams'
 import User from './model/User'
 import UserTeamParams from './model/UserTeamParams'
+import ValidationError from './model/ValidationError'
+import ValidationErrorErrors from './model/ValidationErrorErrors'
 import AuthApi from './api/AuthApi'
 import ProfileApi from './api/ProfileApi'
 import TeamApi from './api/TeamApi'
@@ -65,6 +68,12 @@ export {
   ApiClient,
 
   /**
+     * The AuthLogin model constructor.
+     * @property {module:umschlag/model/AuthLogin}
+     */
+  AuthLogin,
+
+  /**
      * The AuthToken model constructor.
      * @property {module:umschlag/model/AuthToken}
      */
@@ -77,10 +86,10 @@ export {
   AuthVerify,
 
   /**
-     * The InlineObject model constructor.
-     * @property {module:umschlag/model/InlineObject}
+     * The GeneralError model constructor.
+     * @property {module:umschlag/model/GeneralError}
      */
-  InlineObject,
+  GeneralError,
 
   /**
      * The Profile model constructor.
@@ -117,6 +126,18 @@ export {
      * @property {module:umschlag/model/UserTeamParams}
      */
   UserTeamParams,
+
+  /**
+     * The ValidationError model constructor.
+     * @property {module:umschlag/model/ValidationError}
+     */
+  ValidationError,
+
+  /**
+     * The ValidationErrorErrors model constructor.
+     * @property {module:umschlag/model/ValidationErrorErrors}
+     */
+  ValidationErrorErrors,
 
   /**
     * The AuthApi service constructor.

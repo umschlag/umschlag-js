@@ -73,8 +73,8 @@ var Umschlag = require('umschlag');
 
 
 var api = new Umschlag.AuthApi()
-var auth = new Umschlag.InlineObject(); // {InlineObject} 
-api.loginUser(auth).then(function(data) {
+var params = new Umschlag.AuthLogin(); // {AuthLogin} The credentials to authenticate
+api.loginUser(params).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -115,20 +115,37 @@ Class | Method | HTTP request | Description
 
 ## Documentation for models
 
+ - [Umschlag.AuthLogin](docs/AuthLogin.md)
  - [Umschlag.AuthToken](docs/AuthToken.md)
  - [Umschlag.AuthVerify](docs/AuthVerify.md)
- - [Umschlag.InlineObject](docs/InlineObject.md)
+ - [Umschlag.GeneralError](docs/GeneralError.md)
  - [Umschlag.Profile](docs/Profile.md)
  - [Umschlag.Team](docs/Team.md)
  - [Umschlag.TeamUser](docs/TeamUser.md)
  - [Umschlag.TeamUserParams](docs/TeamUserParams.md)
  - [Umschlag.User](docs/User.md)
  - [Umschlag.UserTeamParams](docs/UserTeamParams.md)
+ - [Umschlag.ValidationError](docs/ValidationError.md)
+ - [Umschlag.ValidationErrorErrors](docs/ValidationErrorErrors.md)
 
 
 ## Documentation for authorization
 
-All endpoints do not require authorization.
+
+
+### BasicAuth
+
+- **Type**: HTTP basic authentication
+
+
+
+### HeaderAuth
+
+
+- **Type**: API key
+- **API key parameter name**: X-API-Key
+- **Location**: HTTP header
+
 
 
 ## Security

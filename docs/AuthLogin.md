@@ -1,4 +1,4 @@
-# Umschlag.InlineObject
+# Umschlag.AuthLogin
 
 ## Properties
 
