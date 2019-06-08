@@ -72,8 +72,8 @@ var Umschlag = require('umschlag');
 
 
 var api = new Umschlag.AuthApi()
-var params = new Umschlag.AuthLogin(); // {AuthLogin} The credentials to authenticate
-api.loginUser(params).then(function(data) {
+var authLogin = new Umschlag.AuthLogin(); // {AuthLogin} The credentials to authenticate
+api.loginUser(authLogin).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -95,7 +95,7 @@ Class | Method | HTTP request | Description
 *Umschlag.TeamApi* | [**appendTeamToUser**](docs/TeamApi.md#appendTeamToUser) | **POST** /teams/{team_id}/users | Assign a user to team
 *Umschlag.TeamApi* | [**createTeam**](docs/TeamApi.md#createTeam) | **POST** /teams | Create a new team
 *Umschlag.TeamApi* | [**deleteTeam**](docs/TeamApi.md#deleteTeam) | **DELETE** /teams/{team_id} | Delete a specific team
-*Umschlag.TeamApi* | [**delteTeamFromUser**](docs/TeamApi.md#delteTeamFromUser) | **DELETE** /teams/{team_id}/users | Remove a user from team
+*Umschlag.TeamApi* | [**deleteTeamFromUser**](docs/TeamApi.md#deleteTeamFromUser) | **DELETE** /teams/{team_id}/users | Remove a user from team
 *Umschlag.TeamApi* | [**listTeamUsers**](docs/TeamApi.md#listTeamUsers) | **GET** /teams/{team_id}/users | Fetch all users assigned to team
 *Umschlag.TeamApi* | [**listTeams**](docs/TeamApi.md#listTeams) | **GET** /teams | Fetch all available teams
 *Umschlag.TeamApi* | [**permitTeamUser**](docs/TeamApi.md#permitTeamUser) | **PUT** /teams/{team_id}/users | Update user perms for team
